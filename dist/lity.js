@@ -490,6 +490,8 @@
 
         // -- Initialization --
 
+        result = factory(target, self, options.handlers, options.handler);
+
         // Adaptation Lity Carousel
         var iscarousel = false;
         // two classes to know if the arrows are enabled or not ( prev arrow on first slide and next arrow on last slide are disabled)
@@ -558,9 +560,6 @@
         ;
 
         // End of modifications for Lity Carousel
-
-
-        result = factory(target, self, options.handlers, options.handler);
 
         element
             .attr(_attrAriaHidden, 'false')
